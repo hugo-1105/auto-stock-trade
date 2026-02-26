@@ -1,0 +1,9 @@
+ib_insync==0.9.86
+pandas==2.2.2
+numpy==1.26.4
+pydantic==2.8.2
+python-dotenv==1.0.1
+PyYAML==6.0.2
+pytz==2024.1
+exchange-calendars==4.5.5
+structlog==24.2.0
