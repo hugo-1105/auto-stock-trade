@@ -1,0 +1,28 @@
+mode: paper
+base_currency: GBP
+account_id: UXXXXXXX
+risk:
+  risk_per_trade: 0.0075
+  max_total_risk: 0.02
+  max_positions: 3
+  daily_loss_limit: 0.015
+  max_single_alloc: 0.35
+execution:
+  order_type_entry: LMT
+  cancel_stale_orders_minutes: 30
+  slippage_bps: 5
+session:
+  exchange: XNYS
+  market_timezone: America/New_York
+  local_timezone: Europe/London
+  trade_window_ny:
+    start: "10:00"
+    end: "15:30"
+strategy:
+  timeframe: 1D
+  rebalance: weekly
+  ma_fast: 100
+  ma_slow: 200
+  lookback_days: 260
+universe:
+  symbols: ["SPY", "QQQ", "VTI", "AAPL", "MSFT"]
